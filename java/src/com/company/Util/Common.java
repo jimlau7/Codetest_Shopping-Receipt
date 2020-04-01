@@ -34,8 +34,8 @@ public class Common {
         // Rounded up to the nearest 0.05
         if(price > 0) {
             final double rounded = 0.05;
-            final int index = 10;      // got digit in 0.0x
-            final double point_one = 0.1;   // got remaining part
+            final int index = 10;      // get two digits after decimal in 0.0x
+            final double point_one = 0.1;   // get remaining part when increasing to 0.x0
 
             double intPart = (int) (price * index);
             price = (price * index - (int) (price * index)) / index;
